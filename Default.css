@@ -1,0 +1,333 @@
+/* Estilo feito por CrimsonWolf */
+/* estilo em uso nas páginas padrões do site */
+
+
+/* menu grudante */
+.top-container {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+}
+*.content {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+.content {
+    background-color: white;
+    padding: 50px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.nav {
+    list-style-type: none;
+    padding: 15px 16px;
+    background: #4193e2;
+    color: #f1f1f1;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 102px;
+}
+
+
+/* css embuido em boostrap */
+.m_nav{
+    font-family: Georgia;
+}
+.caro-hide {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.carousel .item {
+    position: relative;
+    height: 500px;
+}
+.item img {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 400px;
+}
+.card a{
+    color: black;
+}
+.card a:hover {
+    font-weight: bolder;
+    color: #4193e2;
+    text-decoration: none;
+}
+
+
+/* corpo */
+.shadow {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+#topper {
+    height: 50px;
+    background-color: black;
+    background-image: linear-gradient(#020024, 15%, #4193e2);
+}
+#cit {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: 300px;
+    width: 100%;
+    padding: 5px;
+    border-left: 2px;
+}
+.icon {
+    max-width: 500px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    object-fit: fill;
+}
+
+/* scrollbar */
+*::-webkit-scrollbar-track{
+    background-color: #CCCC;
+}
+*::-webkit-scrollbar{
+    width: 8px;
+}
+*::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    border: 2PX solid #CACEE2;
+    background-color: #BDC1DB;
+}
+/* scrollbar (firefox) */
+*{
+    scrollbar-width: thin;
+    scrollbar-color: #BDC1D8 #CCCC;
+}
+
+
+/* footer do site */
+*.site-footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.site-footer{
+    padding: 20px 0 20px;
+    background-color: #4193e2;
+    color: black;
+    line-height: 24px;
+    font-size: 10px;
+}
+.site-footer h6 {
+    color: whitesmoke;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.site-footer a {
+    color: black;
+}
+.site-footer a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+.footer-links {
+    padding-left: 5px;
+    list-style: none;
+}
+.footer-links li {
+    display: block;
+}
+.footer-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+.footer-links a:active, .footer-links a:focus, .footer-links a:hover {
+    color: whitesmoke;
+}
+.footer-links.inline li {
+    display: inline-block;
+}
+
+/* Form Principal */
+form {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+.form-box{
+    margin: auto;
+    margin-top: 50px;
+    background-color: #D3ECFC;
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 500px;
+    border-radius: 20px 20px 20px 20px;
+}
+.form-box h2{
+    font-size:30px;
+}
+.form-box p{
+    font-weight: bold;
+    color: #3d3d3d;
+}
+.form-box form{
+    margin: 20px 0;
+}
+form .input-group{
+    margin-bottom: 15px;
+}
+form .input-group input{
+    color:#3d3d3d;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+form .input-group input{
+    width: 100%;
+    height: 47px;
+    background-color: white;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid black;
+    padding: 15px;
+    font-size:15px;
+    color: black;
+    transition: all 0.2s ease;  
+}
+form .input-group input:focus{
+    border: 2px #4193e2 solid;
+    background-color: #3d3d3d23;
+}
+.custom-select{
+    width: 100% !important;
+    height: 47px !important;
+    position: relative;
+    font-family: Georgia;
+    font-size: 15px;
+    color: #616161;
+    background-color: rgba(255, 255, 255, 0.32);
+    border: 1px solid black !important;
+    border-radius: 20px !important;
+}
+@media (max-width:930px) {
+.img-box{
+    display:none;
+}
+.box{
+    width: 700px;
+}
+.form-box{
+    width:100%;
+    border-radius:20px;
+}
+}
+@media(max-width:500px){
+    .w50{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Sidebar Menu */
+*.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #4193e2;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-radius: 2px;
+  border-right: 1px black solid;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sidenav-icon {
+    margin: 10px 5px;
+}
+.sidenav-links {
+    padding-left: 5px;
+    list-style: none;
+}
+.sidenav-links li {
+    display: block;
+}
+.sidenav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+.sidenav-links a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+.sidenav-links :focus, .sidenav-links :hover {
+    color: whitesmoke;
+}
+.sidenav-links.inline li {
+    display: inline-block;
+}
+.sidenav h6 {
+    color: whitesmoke;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: black;
+}
+.sidenav .closebtn a:hover {
+    color: red;
+    text-decoration: none;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Login form */
+.login-form {
+    border: 1px solid black;
+}
+.login-form a {
+    color: black;
+}
+.login-form a:hover{
+    color: #4193e2;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+div#msg-sucesso{
+    width: 420px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(50, 205, 50, .3);
+    border: 1px solid rgb(34,139,34);
+
+}
+div.msg-erro{
+    width: 420px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: rgba(250, 128, 114, .3);
+    border: 1px solid rgb(165,42,42);
+
+}
